@@ -60,7 +60,7 @@ class post extends React.Component {
   render() {
     return (
       <>
-      <h1>comments  </h1>
+      <h1>Comments  </h1>
         <Table striped bordered>
           <tr>
             <th>postId</th>
