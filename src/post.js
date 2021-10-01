@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useState, useEffect, useContext } from "react";
+import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { Button } from "react-bootstrap";
 
@@ -41,8 +41,8 @@ export default function Post() {
 
   //DisplayData
   function DisplayPost({ data, user }) {
-    let userName = "";
-    let title = data.title;
+    userName = "";
+    title = data.title;
     user.forEach((a) => {
       if (data.userId === a.id) userName = a.name;
     });
