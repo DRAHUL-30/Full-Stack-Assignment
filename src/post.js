@@ -2,11 +2,8 @@ import axios from "axios";
 import { useState, useEffect, useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { Button } from "react-bootstrap";
-import { context } from "./context";
 
 export default function Post() {
-
-  const context1=useContext(context);
 
   const [data, setData] = useState([]);
   const [user, setUser] = useState([]);
@@ -51,7 +48,6 @@ export default function Post() {
     });
     return (
       <>
-       {console.log(context1)}
         <div className="card1">
           <div className="cardHeader">
             <div className="name">
